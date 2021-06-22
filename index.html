@@ -36,14 +36,19 @@
                 <div class="btn-group" role="group" aria-label="First group">
                     <button type="button" :class=" (index == counter) ? 'active' : '' "
                         class="btn btn-outline-secondary" v-for="(item,index) in images" @click="cambiaPhoto(index)"><i
-                            class="bi bi-record-circle-fill"></i></button>
+                            class="bi bi-record-circle-fill"></i>
+
+                    </button>
                 </div>
             </div>
+
+
 
         </div>
 
 
     </div>
+
 
     <script src="js/script.js"></script>
 </body>

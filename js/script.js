@@ -9,13 +9,15 @@ const app = new Vue(
             images: [
                 "https://source.unsplash.com/collection/190727/1600x900",
                 "https://source.unsplash.com/random",
-                "https://source.unsplash.com/daily"
+                "https://source.unsplash.com/collection/random"
             ],
+
         },
         methods: {
             nextPhoto() {
                 (this.counter == this.images.length - 1) ? this.counter = 0 : this.counter++;
                 removeActiveClasses()
+
             },
             prevPhoto() {
                 (this.counter == 0) ? this.counter = this.counter = this.images.length - 1 : this.counter--;
@@ -27,17 +29,22 @@ const app = new Vue(
 
         }
 
-    });
+    }
+);
+
+
+
+
 
 /* ------------------------------ */
 
 const panels = document.querySelectorAll('.panel');
 
 panels.forEach((panel) => {
+
     panel.addEventListener('click', () => {
         removeActiveClasses()
         panel.classList.add('active')
-
     })
 
 })
