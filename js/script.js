@@ -1,19 +1,5 @@
-// const panels = document.querySelectorAll('.panel');
 
-// panels.forEach((panel) => {
-//     panel.addEventListener('click', () => {
-//         removeActiveClasses()
-//         panel.classList.add('active')
-//     })
-
-// })
-
-// function removeActiveClasses() {
-//     panels.forEach(panel => {
-//         panel.classList.remove('active')
-//     })
-// };
-
+//----------------VUE JS------------------//
 const app = new Vue(
     {
         el: "#app",
@@ -41,6 +27,7 @@ const app = new Vue(
     });
 
 /* ------------------------------ */
+
 const panels = document.querySelectorAll('.panel');
 
 panels.forEach((panel) => {
