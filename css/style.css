@@ -4,21 +4,31 @@
     margin:0;
     box-sizing: border-box;
 }
-
+/***********BODY CSS***********/
 body {
     font-family: 'Muli',sans-serif;
     display: flex;
     align-items: center;
     justify-content:center;
     height: 100vh;
-    overflow: hidden;
     margin: 0;
 }
-
-.container{
+/* SIDE CONTAINER D-FLEX WITH 3 SECTIONS */
+.side{
     display: flex;
     width: 90vw;
-
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    position: relative;
+    margin: auto;
+    border-radius: 50px;
+}
+/* IMAGE SIZE  */
+.panel img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
 }
 
 .panel{
@@ -34,28 +44,14 @@ body {
     position: relative;
     transition: flex 0.7s ease-in;
 }
-.panel h3{
-    font-size: 24px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    margin: 0;
-    opacity: 0;
+
+.next i:hover{
+    font-size: 7rem
 }
-.panel.active{
-    flex: 5;
-}
-.panel.active h3 {
-    opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s;
+.prev i:hover{
+    font-size: 7rem
 }
 
-@media(max-width: 480px){
-    container{
-        width:100vw;
-    }
-    .panel:nth-of-type(4)
-    .panel:nth-of-type(5){
-        display: none;
-    }
-}
+
+
+
