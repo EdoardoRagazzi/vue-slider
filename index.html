@@ -32,6 +32,13 @@
             <div class="next d-flex justify-content-end" @click="nextPhoto">
                 <i class="bi bi-arrow-bar-right"></i>
             </div>
+            <div class="nav">
+                <div class="btn-group" role="group" aria-label="First group">
+                    <button type="button" :class=" (index == counter) ? 'active' : '' "
+                        class="btn btn-outline-secondary" v-for="(item,index) in images" @click="cambiaPhoto(index)"><i
+                            class="bi bi-record-circle-fill"></i></button>
+                </div>
+            </div>
 
         </div>
 

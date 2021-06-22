@@ -20,6 +20,9 @@ const app = new Vue(
             prevPhoto() {
                 (this.counter == 0) ? this.counter = this.counter = this.images.length - 1 : this.counter--;
                 removeActiveClasses()
+            },
+            cambiaPhoto(indice) {
+                this.counter = indice;
             }
 
         }
