@@ -46,10 +46,12 @@ body {
 }
 
 .next i:hover{
-    font-size: 7rem
+    font-size: 7rem;
+    color:purple;
 }
 .prev i:hover{
-    font-size: 7rem
+    font-size: 7rem;
+    color:purple;
 }
 
 
