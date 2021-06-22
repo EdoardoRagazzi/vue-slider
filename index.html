@@ -20,18 +20,16 @@
 <body>
 
     <div class="container" id="app">
-        <div class="panel p-3 mb-2 bg-secondary text-white d-flex">
+        <div class="side p-3 mb-2 bg-secondary text-white d-flex">
 
             <!-- Button Prev -->
             <div class="prev">
                 <i class="bi bi-arrow-bar-left"></i>
             </div>
-            <div class="img"
-                style="background-image: url('https://images.unsplash.com/photo-1616242467470-510e05ca0b5b?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2MHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-
-
+            <div class="panel">
+                <img :src="images[counter]" alt="figura">
             </div>
-            <div class="next">
+            <div class="next" @click="nextPhoto">
                 <i class="bi bi-arrow-bar-right"></i>
             </div>
 
