@@ -49,13 +49,19 @@ body {
 .next i:hover{
     font-size: 7rem;
     color:purple;
+    background-color:cadetblue;
+    border-radius: 20%;
+    transition: 00.7s;
 }
+
 .prev i:hover{
     font-size: 7rem;
     color:purple;
+    background-color:cadetblue;
+    border-radius: 20%;
+    transition: 00.7s;
 }
 /* ------------------------------ */
-
 .panel.active{
     flex: 4;
 }
