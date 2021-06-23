@@ -18,38 +18,36 @@
 </head>
 
 <body>
-
+    <!-- INIZIO CONTAINER CON ID VUE -->
     <div class="container" id="app">
+        <!-- SIDE CONTAINER D-FLEX (BOOTSTRAP) -->
         <div class="side p-3 mb-2 bg-secondary text-white d-flex justify-content-around">
 
-            <!-- Button Prev -->
+            <!-- BUTTON PREV -->
             <div class="prev" @click="prevPhoto">
                 <i class="bi bi-arrow-bar-left"></i>
             </div>
+            <!-- PANEL IMAGE -->
             <div class="panel">
                 <img :src="images[counter]" alt="figura">
             </div>
+            <!-- BUTTON NEXT -->
             <div class="next d-flex justify-content-end" @click="nextPhoto">
                 <i class="bi bi-arrow-bar-right"></i>
             </div>
+
+            <!-- NAV BUTTONS -->
             <div class="nav">
                 <div class="btn-group" role="group" aria-label="First group">
                     <button type="button" :class=" (index == counter) ? 'active' : '' "
-                        class="btn btn-outline-secondary" v-for="(item,index) in images" @click="cambiaPhoto(index)"><i
+                        class="btn btn-outline-secondary" v-for="(item,index) in images" @click="cambiaPhoto(index) "><i
                             class="bi bi-record-circle-fill"></i>
-
                     </button>
                 </div>
             </div>
-
-
-
         </div>
-
-
     </div>
-
-
+    <!-- SCRIPT JS -->
     <script src="js/script.js"></script>
 </body>
 
